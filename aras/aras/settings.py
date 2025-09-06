@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
+    'oms.apps.OmsConfig',
 ]
+
+AUTH_USER_MODEL = "account.User"  # <— ÖNEMLİ
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

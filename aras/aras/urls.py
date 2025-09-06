@@ -21,7 +21,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('account.urls')),  # kendi app’in urls.py’sini dahil edebilirsin
+    path('', include('account.urls')), 
+    path('oms/', include("oms.urls")), # ← kök URL artık home'a gider # kendi app’in urls.py’sini dahil edebilirsin
 ]
 
 if settings.DEBUG:  # sadece development için
